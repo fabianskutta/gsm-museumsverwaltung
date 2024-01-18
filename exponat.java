@@ -46,5 +46,20 @@ public class exponat
             lager = false;
         }
     }
+
+    public void gibOrt(){
+        if(ausstellung = true){
+            System.out.print("Das Exponat befindet sich in der Ausstellung");
+            return;
+        }
+        if(lager = true){
+            System.out.print("Das Exponat befindet sich im Lager");
+            return;
+        }
+        if(ausgeliehen = true){
+            System.out.print("Das Exponat ist derzeit ausgeliehen");
+            return;
+        }
+    }
     
 }
