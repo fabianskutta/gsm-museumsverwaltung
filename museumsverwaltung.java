@@ -2,32 +2,25 @@
 /**
  * Beschreiben Sie hier die Klasse museumsverwaltung.
  * 
- * @author (Ihr Name) 
- * @version (eine Versionsnummer oder ein Datum)
+ * @author Fabian, Moritz, Joel
+ * @version 0.1
  */
-public class museumsverwaltung
-{
-    // Instanzvariablen - ersetzen Sie das folgende Beispiel mit Ihren Variablen
-    private int x;
+public class museumsverwaltung {
+    private List exponate;
 
-    /**
-     * Konstruktor für Objekte der Klasse museumsverwaltung
-     */
-    public museumsverwaltung()
-    {
-        // Instanzvariable initialisieren
-        x = 0;
+    public museumsverwaltung() {
+        List exponate = new List<Exponat>();
     }
 
-    /**
-     * Ein Beispiel einer Methode - ersetzen Sie diesen Kommentar mit Ihrem eigenen
-     * 
-     * @param  y    ein Beispielparameter für eine Methode
-     * @return        die Summe aus x und y
-     */
-    public int beispielMethode(int y)
-    {
-        // tragen Sie hier den Code ein
-        return x + y;
+    public void ausleihen (name) {
+
+    }
+
+    public void ausstellen (name) {
+        
+    }
+
+    public void einlagern (name) {
+        
     }
 }
