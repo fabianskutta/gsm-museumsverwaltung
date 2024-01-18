@@ -2,8 +2,8 @@
 /**
  * Beschreiben Sie hier die Klasse museumsverwaltung.
  * 
- * @author (Ihr Name) 
- * @version (eine Versionsnummer oder ein Datum)
+ * @author Fabian, Moritz, Joel
+ * @version 0.1
  */
 public class museumsverwaltung
 {
@@ -11,7 +11,7 @@ public class museumsverwaltung
     private int x;
 
     /**
-     * Konstruktor für Objekte der Klasse museumsverwaltung
+     * Konstruktor fï¿½r Objekte der Klasse museumsverwaltung
      */
     public museumsverwaltung()
     {
@@ -22,7 +22,7 @@ public class museumsverwaltung
     /**
      * Ein Beispiel einer Methode - ersetzen Sie diesen Kommentar mit Ihrem eigenen
      * 
-     * @param  y    ein Beispielparameter für eine Methode
+     * @param  y    ein Beispielparameter fï¿½r eine Methode
      * @return        die Summe aus x und y
      */
     public int beispielMethode(int y)
