@@ -9,7 +9,7 @@ public class museumsverwaltung {
     private List exponate;
 
     public museumsverwaltung() {
-        List exponate = new List<Exponat>();
+        List<exponat> exponate = new List<exponat>();
     }
 
     public void ausleihen (name) {
