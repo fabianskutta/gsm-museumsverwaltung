@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.target=exponat
+comment0.text=\r\n\ Beschreiben\ Sie\ hier\ die\ Klasse\ exponat.\r\n\ \r\n\ @author\ (Ihr\ Name)\ \r\n\ @version\ (eine\ Versionsnummer\ oder\ ein\ Datum)\r\n
+comment1.params=name\ typ
+comment1.target=exponat(java.lang.String,\ java.lang.String)
+comment2.params=
+comment2.target=void\ aendereAusgeliehen()
+comment3.params=
+comment3.target=void\ aendereAusstellung()
+comment4.params=
+comment4.target=void\ aendereLager()
+numComments=5
