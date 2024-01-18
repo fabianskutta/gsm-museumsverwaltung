@@ -9,18 +9,18 @@ public class museumsverwaltung {
     private List exponate;
 
     public museumsverwaltung() {
-        List exponate = new List<Exponat>();
+        List<exponat> exponate = new List<exponat>();
     }
 
-    public void ausleihen (name) {
-
+    public void ausleihen (Exponat name) {
+        name.aendereAusgeliehen();
     }
 
-    public void ausstellen (name) {
-        
+    public void ausstellen (Exponat name) {
+        name.aendereAusstellung();
     }
 
-    public void einlagern (name) {
-        
+    public void einlagern (Exponat name) {
+        name.aendereLager();
     }
 }
