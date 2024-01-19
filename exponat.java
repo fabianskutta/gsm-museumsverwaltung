@@ -6,12 +6,19 @@
  * @version (eine Versionsnummer oder ein Datum)
  */
 public class exponat {
-    public boolean ausgeliehen;
-    public boolean ausstellung;
-    public boolean lager;
 
+    //Die verschiedenen Orte eines Exponats
+    private boolean ausgeliehen;
+    private boolean ausstellung;
+    private boolean lager;
+    public String expoName;
+    public String expoTyp;
+
+    //Exponat Klasse mit Konstruktor wird 
     public exponat(String name, String typ)
     {
+        expoName = name;
+        expoTyp = typ;
         ausgeliehen = false;
         ausstellung = false;
         lager = false;
