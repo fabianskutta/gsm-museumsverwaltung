@@ -6,21 +6,25 @@
  * @version 0.1
  */
 public class museumsverwaltung {
-    private List exponate;
+    private List<exponat> exponatList;
 
     public museumsverwaltung() {
-        List<exponat> exponate = new List<exponat>();
+        exponatList = new List<exponat>();
     }
 
-    public void ausleihen (Exponat name) {
+    public void ausleihen (exponat name) {
         name.aendereAusgeliehen();
     }
 
-    public void ausstellen (Exponat name) {
+    public void ausstellen (exponat name) {
         name.aendereAusstellung();
     }
 
-    public void einlagern (Exponat name) {
+    public void einlagern (exponat name) {
         name.aendereLager();
+    }
+
+    public void addExponat(String name, String typ) {
+        exponatList.append(new exponat(name, typ));
     }
 }
