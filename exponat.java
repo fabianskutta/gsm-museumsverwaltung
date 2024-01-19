@@ -89,5 +89,9 @@ public class exponat {
             return;
         }
     }
+
+    public String gibName() {
+        return this.name;
+    }
     
 }
