@@ -15,7 +15,7 @@ public class museumsverwaltung {
     public void ausleihen (String name) {
         exponatList.toFirst();
         while (exponatList.hasAccess()) {
-            if (exponatList.getContent().gibName() == name) {
+            if (exponatList.getContent().expoName == name) {
                 exponatList.getContent().aendereAusgeliehen();
             } else {
                 exponatList.next();
