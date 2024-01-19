@@ -15,21 +15,34 @@ public class museumsverwaltung {
     public void ausleihen (String name) {
         exponatList.toFirst();
         while (exponatList.hasAccess()) {
-            if (exponatList.getContent().name == name) {
+            if (exponatList.getContent().gibName() == name) {
                 exponatList.getContent().aendereAusgeliehen();
             } else {
                 exponatList.next();
             }
         }
-        
     }
 
-    public void ausstellen (exponat name) {
-        name.aendereAusstellung();
+    public void ausstellen (String name) {
+        exponatList.toFirst();
+        while (exponatList.hasAccess()) {
+            if (exponatList.getContent().gibName() == name) {
+                exponatList.getContent().aendereAusstellung();
+            } else {
+                exponatList.next();
+            }
+        }
     }
 
-    public void einlagern (exponat name) {
-        name.aendereLager();
+    public void einlagern (String name) {
+        exponatList.toFirst();
+        while (exponatList.hasAccess()) {
+            if (exponatList.getContent().gibName() == name) {
+                exponatList.getContent().aendereLager();
+            } else {
+                exponatList.next();
+            }
+        }
     }
 
     public void addExponat(String name, String typ) {
