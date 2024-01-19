@@ -12,8 +12,16 @@ public class museumsverwaltung {
         exponatList = new List<exponat>();
     }
 
-    public void ausleihen (exponat name) {
-        name.aendereAusgeliehen();
+    public void ausleihen (String name) {
+        exponatList.toFirst();
+        while (exponatList.hasAccess) {
+            if (exponatList.getContent().name == name) {
+                exponatList.getContent().aendereAusgeliehen();
+            } else {
+                exponatList.next();
+            }
+        }
+        
     }
 
     public void ausstellen (exponat name) {
