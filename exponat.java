@@ -12,14 +12,20 @@ public class exponat extends museumsverwaltung {
 
     public exponat(String name, String typ)
     {
-        String expoName = name;
-        String expoTyp = typ;
         ausgeliehen = false;
         ausstellung = false;
         lager = false;
     }
 
     public void aendereAusgeliehen(){
+        if(ausstellung = true){
+            System.out.print("Das Exponat wird derzeit ausgeliehen");
+            return;
+        }
+        if(lager = true){
+            System.out.print("Das Exponat befindet sich derzeit im Lager");
+            return;
+        }
         if (ausgeliehen = false){
            ausgeliehen = true; 
         }
@@ -29,6 +35,14 @@ public class exponat extends museumsverwaltung {
     }
 
     public void aendereAusstellung(){
+        if(ausgeliehen = true){
+            System.out.print("Das Exponat wird derzeit ausgeliehen");
+            return;
+        }
+        if(lager = true){
+            System.out.print("Das Exponat befindet sich derzeit im Lager");
+            return;
+        }
         if (ausstellung = false){
             ausstellung = true;
         }
@@ -38,6 +52,14 @@ public class exponat extends museumsverwaltung {
     }
 
     public void aendereLager(){
+        if(ausgeliehen = true){
+            System.out.print("Das Exponat wird derzeit ausgeliehen");
+            return;
+        }
+        if(ausstellung = true){
+            System.out.print("Das Exponat befindet sich derzeit im Lager");
+            return;
+        }
         if(lager = false){
             lager = true;
         }
