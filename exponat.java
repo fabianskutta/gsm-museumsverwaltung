@@ -5,8 +5,7 @@
  * @author (Ihr Name) 
  * @version (eine Versionsnummer oder ein Datum)
  */
-public class exponat
-{
+public class exponat extends museumsverwaltung {
     public boolean ausgeliehen;
     public boolean ausstellung;
     public boolean lager;
