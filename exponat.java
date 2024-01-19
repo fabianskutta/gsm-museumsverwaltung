@@ -1,22 +1,25 @@
-
 /**
- * Beschreiben Sie hier die Klasse exponat.
+ * Die Klasse Exponat repräsentiert ein Ausstellungsstück mit verschiedenen Zuständen (Ausstellung, Lager, Ausgeliehen).
  * 
- * @author (Ihr Name) 
- * @version (eine Versionsnummer oder ein Datum)
+ * @author Moritz, Joel, Fabian
+ * @version 19.01.2024
  */
 public class exponat {
 
-    //Die verschiedenen Orte eines Exponats
+    // Die Parameter der Klasse
     private boolean ausgeliehen;
     private boolean ausstellung;
     private boolean lager;
     public String expoName;
     public String expoTyp;
 
-    //Exponat Klasse mit Konstruktor wird 
-    public exponat(String name, String typ)
-    {
+    /**
+     * Konstruktor für die Exponat-Klasse.
+     * 
+     * @param name Der Name des Exponats.
+     * @param typ Der Typ des Exponats.
+     */
+    public exponat(String name, String typ) {
         expoName = name;
         expoTyp = typ;
         ausgeliehen = false;
@@ -24,70 +27,61 @@ public class exponat {
         lager = false;
     }
 
-    public void aendereAusgeliehen(){
-        if(ausstellung = true){
+    /**
+     * Methode zur Änderung des Ausgeliehen-Zustands.
+     */
+    public void aendereAusgeliehen() {
+        if (ausstellung) {
             System.out.print("Das Exponat wird derzeit ausgeliehen");
             return;
         }
-        if(lager = true){
+        if (lager) {
             System.out.print("Das Exponat befindet sich derzeit im Lager");
             return;
         }
-        if (ausgeliehen = false){
-           ausgeliehen = true; 
-        }
-        else{
-            ausgeliehen = false;
-        }
+        ausgeliehen = !ausgeliehen;
     }
 
-    public void aendereAusstellung(){
-        if(ausgeliehen = true){
+    /**
+     * Methode zur Änderung des Ausstellungs-Zustands.
+     */
+    public void aendereAusstellung() {
+        if (ausgeliehen) {
             System.out.print("Das Exponat wird derzeit ausgeliehen");
             return;
         }
-        if(lager = true){
+        if (lager) {
             System.out.print("Das Exponat befindet sich derzeit im Lager");
             return;
         }
-        if (ausstellung = false){
-            ausstellung = true;
-        }
-        else{
-            ausstellung = false;
-        }
+        ausstellung = !ausstellung;
     }
 
-    public void aendereLager(){
-        if(ausgeliehen = true){
+    /**
+     * Methode zur Änderung des Lager-Zustands.
+     */
+    public void aendereLager() {
+        if (ausgeliehen) {
             System.out.print("Das Exponat wird derzeit ausgeliehen");
             return;
         }
-        if(ausstellung = true){
+        if (ausstellung) {
             System.out.print("Das Exponat befindet sich derzeit im Lager");
             return;
         }
-        if(lager = false){
-            lager = true;
-        }
-        else{
-            lager = false;
-        }
+        lager = !lager;
     }
 
-    public void gibOrt(){
-        if(ausstellung = true){
+    /**
+     * Methode zur Anzeige des aktuellen Orts des Exponats.
+     */
+    public void gibOrt() {
+        if (ausstellung) {
             System.out.print("Das Exponat befindet sich in der Ausstellung");
-            return;
-        }
-        if(lager = true){
+        } else if (lager) {
             System.out.print("Das Exponat befindet sich im Lager");
-            return;
-        }
-        if(ausgeliehen = true){
+        } else if (ausgeliehen) {
             System.out.print("Das Exponat ist derzeit ausgeliehen");
-            return;
         }
     }
-    
 }
