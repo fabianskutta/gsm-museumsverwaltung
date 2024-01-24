@@ -1,14 +1,22 @@
 #BlueJ class context
 comment0.target=museumsverwaltung
-comment0.text=\r\n\ Beschreiben\ Sie\ hier\ die\ Klasse\ museumsverwaltung.\r\n\ \r\n\ @author\ Fabian,\ Moritz,\ Joel\r\n\ @version\ 0.1\r\n
+comment0.text=\r\n\ Die\ Klasse\ museumsverwaltung\ dient\ der\ Verwaltung\ von\ Exponaten\ in\ einem\ Museum.\r\n\ \r\n\ @author\ Fabian,\ Moritz,\ Joel\r\n\ @version\ 0.1\r\n
 comment1.params=
 comment1.target=museumsverwaltung()
+comment1.text=\r\n\ Konstruktor\ f\u00FCr\ die\ museumsverwaltung-Klasse.\ Initialisiert\ die\ Liste\ f\u00FCr\ Exponate.\r\n
 comment2.params=name
-comment2.target=void\ ausleihen(exponat)
+comment2.target=void\ ausleihen(java.lang.String)
+comment2.text=\r\n\ Methode\ zum\ Ausleihen\ eines\ Exponats.\r\n\r\n\ @param\ name\ Der\ Name\ des\ Exponats,\ das\ ausgeliehen\ werden\ soll.\r\n
 comment3.params=name
-comment3.target=void\ ausstellen(exponat)
+comment3.target=void\ ausstellen(java.lang.String)
+comment3.text=\r\n\ Methode\ zum\ Ausstellen\ eines\ Exponats.\r\n\r\n\ @param\ name\ Der\ Name\ des\ Exponats,\ das\ ausgestellt\ werden\ soll.\r\n
 comment4.params=name
-comment4.target=void\ einlagern(exponat)
+comment4.target=void\ einlagern(java.lang.String)
+comment4.text=\r\n\ Methode\ zum\ Einlagern\ eines\ Exponats.\r\n\r\n\ @param\ name\ Der\ Name\ des\ Exponats,\ das\ eingelagert\ werden\ soll.\r\n
 comment5.params=name\ typ
 comment5.target=void\ addExponat(java.lang.String,\ java.lang.String)
-numComments=6
+comment5.text=\r\n\ Methode\ zum\ Hinzuf\u00FCgen\ eines\ neuen\ Exponats.\r\n\r\n\ @param\ name\ Der\ Name\ des\ neuen\ Exponats.\r\n\ @param\ typ\ \ Der\ Typ\ des\ neuen\ Exponats.\r\n
+comment6.params=
+comment6.target=void\ zaehle()
+comment6.text=\r\n\ Methode\ zum\ Z\u00E4hlen\ und\ Anzeigen\ der\ Anzahl\ von\ Exponaten\ in\ verschiedenen\ Orten\ (Lager,\ ausgeliehen,\ Ausstellung).\r\n
+numComments=7

@@ -1,12 +1,22 @@
 #BlueJ class context
 comment0.target=exponat
-comment0.text=\r\n\ Beschreiben\ Sie\ hier\ die\ Klasse\ exponat.\r\n\ \r\n\ @author\ (Ihr\ Name)\ \r\n\ @version\ (eine\ Versionsnummer\ oder\ ein\ Datum)\r\n
+comment0.text=\r\n\ Die\ Klasse\ Exponat\ repr\u00E4sentiert\ ein\ Ausstellungsst\u00FCck\ mit\ verschiedenen\ Zust\u00E4nden\ (Ausstellung,\ Lager,\ Ausgeliehen).\r\n\ \r\n\ @author\ Moritz,\ Joel,\ Fabian\r\n\ @version\ 19.01.2024\r\n
 comment1.params=name\ typ
 comment1.target=exponat(java.lang.String,\ java.lang.String)
+comment1.text=\r\n\ Konstruktor\ f\u00FCr\ die\ Exponat-Klasse.\r\n\ \r\n\ @param\ name\ Der\ Name\ des\ Exponats.\r\n\ @param\ typ\ Der\ Typ\ des\ Exponats.\r\n
 comment2.params=
 comment2.target=void\ aendereAusgeliehen()
+comment2.text=\r\n\ \u00C4ndert\ den\ Zustand\ des\ Exponats\ auf\ "ausgeliehen".\r\n\ \r\n\ @return\ true,\ wenn\ der\ Zustand\ erfolgreich\ ge\u00E4ndert\ wurde;\ false,\ wenn\ das\ Exponat\ bereits\ im\ Lager\ oder\ ausgestellt\ ist.\r\n
 comment3.params=
 comment3.target=void\ aendereAusstellung()
+comment3.text=\r\n\ \u00C4ndert\ den\ Zustand\ des\ Exponats\ auf\ "ausgestellt".\r\n\ \r\n\ @return\ true,\ wenn\ der\ Zustand\ erfolgreich\ ge\u00E4ndert\ wurde;\ false,\ wenn\ das\ Exponat\ bereits\ ausgeliehen\ oder\ im\ Lager\ ist.\r\n
 comment4.params=
 comment4.target=void\ aendereLager()
-numComments=5
+comment4.text=\r\n\ \u00C4ndert\ den\ Zustand\ des\ Exponats\ auf\ "im\ Lager".\r\n\ \r\n\ @return\ true,\ wenn\ der\ Zustand\ erfolgreich\ ge\u00E4ndert\ wurde;\ false,\ wenn\ das\ Exponat\ bereits\ ausgeliehen\ oder\ ausgestellt\ ist.\r\n
+comment5.params=
+comment5.target=int\ gibOrt()
+comment5.text=\r\n\ Gibt\ den\ aktuellen\ Ort\ des\ Exponats\ zur\u00FCck.\r\n\ \r\n\ @return\ 1\ f\u00FCr\ Ausstellung,\ 2\ f\u00FCr\ Lager,\ 3\ f\u00FCr\ ausgeliehen,\ -1\ wenn\ der\ Ort\ nicht\ erkannt\ werden\ kann.\r\n
+comment6.params=
+comment6.target=java.lang.String\ gibName()
+comment6.text=\r\n\ Gibt\ den\ Namen\ des\ Exponats\ zur\u00FCck.\r\n\ \r\n\ @return\ Der\ Name\ des\ Exponats.\r\n
+numComments=7

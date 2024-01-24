@@ -28,11 +28,13 @@ public class exponat {
     }
 
     /**
-     * Methode zur Änderung des Ausgeliehen-Zustands.
+     * Ändert den Zustand des Exponats auf "ausgeliehen".
+     * 
+     * @return true, wenn der Zustand erfolgreich geändert wurde; false, wenn das Exponat bereits im Lager oder ausgestellt ist.
      */
     public void aendereAusgeliehen() {
         if (ausstellung) {
-            System.out.print("Das Exponat wird derzeit ausgeliehen");
+            System.out.print("Das Exponat wird derzeit ausgestellt");
             return;
         }
         if (lager) {
@@ -43,7 +45,9 @@ public class exponat {
     }
 
     /**
-     * Methode zur Änderung des Ausstellungs-Zustands.
+     * Ändert den Zustand des Exponats auf "ausgestellt".
+     * 
+     * @return true, wenn der Zustand erfolgreich geändert wurde; false, wenn das Exponat bereits ausgeliehen oder im Lager ist.
      */
     public void aendereAusstellung() {
         if (ausgeliehen) {
@@ -58,7 +62,9 @@ public class exponat {
     }
 
     /**
-     * Methode zur Änderung des Lager-Zustands.
+     * Ändert den Zustand des Exponats auf "im Lager".
+     * 
+     * @return true, wenn der Zustand erfolgreich geändert wurde; false, wenn das Exponat bereits ausgeliehen oder ausgestellt ist.
      */
     public void aendereLager() {
         if (ausgeliehen) {
@@ -73,15 +79,28 @@ public class exponat {
     }
 
     /**
-     * Methode zur Anzeige des aktuellen Orts des Exponats.
+     * Gibt den aktuellen Ort des Exponats zurück.
+     * 
+     * @return 1 für Ausstellung, 2 für Lager, 3 für ausgeliehen, -1 wenn der Ort nicht erkannt werden kann.
      */
-    public void gibOrt() {
+    public int gibOrt() {
         if (ausstellung) {
-            System.out.print("Das Exponat befindet sich in der Ausstellung");
+            return 1;
         } else if (lager) {
-            System.out.print("Das Exponat befindet sich im Lager");
+            return 2;
         } else if (ausgeliehen) {
-            System.out.print("Das Exponat ist derzeit ausgeliehen");
+            return 3;
+        } else {
+            return -1;
         }
+    }
+    
+    /**
+     * Gibt den Namen des Exponats zurück.
+     * 
+     * @return Der Name des Exponats.
+     */
+    public String gibName() {
+        return expoName;   
     }
 }
